@@ -92,9 +92,8 @@ json
     "message": "Estudiante eliminado con éxito."
 }
 
-[========]
-[========]
-2. Grados
+
+## 🏫 2. Grados
 Obtener todos los grados
 URL: /api/v1/degrees
 Método: **GET**
