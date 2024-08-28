@@ -11,20 +11,21 @@ Esta API no requiere autenticación para acceder a los endpoints. Sin embargo, s
 
 ### Tablas que podrá ver en <link>https://dbdiagram.io/d
 
-Table degrees{
-  id serial [PK]
-  name varchar
-  semestres_num integer
-}
+|Table degrees{
+  * id serial [PK]
+  * name varchar
+  * semestres_num integer
+}|
 
 
 Table students{
-  id serial [PK]
-  firstname varchar
-  lastname  varchar
-  degree_id integer [ref:> degrees.id ]
+  * id serial [PK]
+  * firstname varchar
+  * lastname  varchar
+  * degree_id integer [ref:> degrees.id ]
 }
-![](./src/img/Database%20digram%20img.png)
+
+|| [](./src/img/Database%20digram%20img.png)||
 > imagen de la base de datos 
 #### Obtener todos los estudiantes
 - URL: /api/v1/students
@@ -35,13 +36,13 @@ Table students{
 ## Ejemplo de respuesta:
 
 [
-    {
+   + {
         "id": 1,
         "firsntname": "Juan",
 		"lastname":" Pérez",
         "gradoId": 1
     },
-    {
+    + {
         "id": 2,
 		"firsntname": "¿Ana ",
 		"lastname":" Gómez",
