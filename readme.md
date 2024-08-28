@@ -25,7 +25,7 @@ Table students{
   * degree_id integer [ref:> degrees.id ]
 }
 
- [](./src/img/Database%20digram%20img.png)
+ ![](./src/img/Database%20digram%20img.png)
 > imagen de la base de datos 
 
 [========]
