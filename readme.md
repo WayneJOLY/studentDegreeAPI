@@ -32,8 +32,8 @@ Table students{
 - Método: **GET**
 - Descripción: Recupera una lista de todos los estudiantes.
 
+<font color="blue">## Ejemplo de respuesta:</font>
 
-## Ejemplo de respuesta:
 
 [
    + {
