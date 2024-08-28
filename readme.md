@@ -1,15 +1,15 @@
 # Documentación de la API de Estudiantes y Grados
-=================================================
+===
 ### ➡️  Introducción
 La API de Estudiantes y Grados permite gestionar la relación entre estudiantes y sus respectivos grados académicos. Proporciona endpoints para crear, leer, actualizar y eliminar información sobre estudiantes y grados.
-
+ [========]
 ### 🔑 Autenticación
 Esta API no requiere autenticación para acceder a los endpoints. Sin embargo, se recomienda implementar un sistema de autenticación en producción para proteger los datos.
-
+ [========]
 ### 🔗 Endpoints
 
 
-### Tablas que podrá ver en <link>https://dbdiagram.io/d
+### 📅 Tablas que podrá ver en <link>https://dbdiagram.io/d
 
 |Table degrees{
   * id serial [PK]
@@ -25,24 +25,24 @@ Table students{
   * degree_id integer [ref:> degrees.id ]
 }
 
-|| [](./src/img/Database%20digram%20img.png)||
+ [](./src/img/Database%20digram%20img.png)
 > imagen de la base de datos 
+
+[========]
 #### Obtener todos los estudiantes
 - URL: /api/v1/students
 - Método: **GET**
 - Descripción: Recupera una lista de todos los estudiantes.
 
-<font color="blue">## Ejemplo de respuesta:</font>
-
 
 [
-   + {
+    {
         "id": 1,
         "firsntname": "Juan",
 		"lastname":" Pérez",
         "gradoId": 1
     },
-    + {
+    {
         "id": 2,
 		"firsntname": "¿Ana ",
 		"lastname":" Gómez",
@@ -50,7 +50,7 @@ Table students{
     }
 ]
 
-
+[========]
 ### Crear un nuevo estudiante
 URL: /api/v1/students
 Método: **POST**
@@ -69,7 +69,7 @@ Ejemplo de respuesta:
     "nombre": "María López",
     "gradoId": 1
 }
-
+[========]
 ### Actualizar un estudiante
 URL: /api/v1/students:id
 Método: PUT
@@ -92,7 +92,8 @@ json
     "message": "Estudiante eliminado con éxito."
 }
 
-
+[========]
+[========]
 2. Grados
 Obtener todos los grados
 URL: /api/v1/degrees
